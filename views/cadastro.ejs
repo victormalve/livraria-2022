@@ -1,0 +1,61 @@
+<%- include('header.ejs') %>
+<%- include('nav.ejs') %>
+
+<!-- =============== Conteúdo ================== -->
+<div class="container mt-5 pt-5">
+    <header>
+        <h1>Books Online
+            <small>Market Place de Livros  </small>
+        </h1>
+    </header>
+    <!-- =============== Cadastro ================== -->
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-8">
+            <div class="card">
+                 <div class="card-body">
+                    <h4 class="card-title">Preencha todos os campos</h4>
+                    
+                    <form class="form" action="" method="POST"> <!-- tem que por o action e o method pra funcionar -->
+                        <fieldset>
+                            <legend>Cadastre-se</legend>
+                        <ul class="list-unstyled">
+                            <li>
+                                <label>Nome:</label>
+                                <input class="form-control" name="nome_cadastro" id="nome_cadastro" >
+                            </li>
+                            <li>
+                                <label>Email:</label>
+                                <input class="form-control" name="email_cadastro" id="email_cadastro" >
+                            </li>
+                            <li>
+                                <label>Telefone:</label>
+                                <input class="form-control" name="telefone_cadastro" id="telefone_cadastro" >
+                            </li>
+                            <li>
+                                <label>Senha:</label>
+                                <input class="form-control" type="password" name="senha_cadastro" id="senha_cadastro" >
+                            </li>
+                            <li>
+                                <label>Confirme a Senha:</label>
+                                <input class="form-control" type="password" name="conf_senha_cadastro" id="conf_senha_cadastro" >
+                            </li>
+                            <li>
+                                 <button type="submit" class="btn btn-primary">Confirmar</button>
+                            </li>
+                        </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <!-- =============== Fim do Cadastro ================== -->
+
+  
+</div>
+</div>
+<!-- =============== Fim do Conteúdo ================== -->
+  <script src="js/controle.js"> </script>
+
+<!-- ======= FOOTER ========= -->
+<%- include('footer.ejs') %>
